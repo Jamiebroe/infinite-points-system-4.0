@@ -1,0 +1,22 @@
+{
+    "name": "sillytavern-infinite-points",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "description": "Infinite Points — a private, chat-aware System for SillyTavern: automatic event rewards, a daily rotating Shop, inventory, achievements and persistent Shop memory.",
+    "license": "MIT",
+    "scripts": {
+        "test": "node --no-warnings --test tests/*.test.mjs",
+        "test:watch": "node --no-warnings --test --watch tests/*.test.mjs",
+        "check": "node --no-warnings scripts/check-modules.mjs && node scripts/check-css.mjs && node scripts/check-unused-imports.mjs",
+        "check:modules": "node --no-warnings scripts/check-modules.mjs",
+        "check:css": "node scripts/check-css.mjs",
+        "check:imports": "node scripts/check-unused-imports.mjs"
+    },
+    "engines": {
+        "node": ">=20"
+    },
+    "devDependencies": {
+        "jsdom": "^30.1.2"
+    }
+}
